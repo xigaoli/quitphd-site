@@ -45,7 +45,10 @@ gallery: my_gallery
     <p class="image-quote">"An apple device a day keeps doctoral degree away."</p>
   </div>
 </div>
-
+<div id="dt-1551">
+</div>
+<script src="./assets/js/dt.js"></script>
+<br>
 
 
 <a href="https://xigaoli.com"><img src="img/quit_cr.jpg" alt="Quit PhD" width="80px"></a>
