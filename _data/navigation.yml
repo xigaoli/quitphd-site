@@ -4,8 +4,8 @@
 - name: Google Scholar
   link: https://scholar.google.com/citations?view_op=list_works&hl=en&user=57h3GlsAAAAJ
 
-# - name: Image Gallery
-#   link: /gallery/
+- name: Image Gallery
+  link: /gallery/
 
 # - name: Example Pages
 #   link: /#
