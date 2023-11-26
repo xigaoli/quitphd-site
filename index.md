@@ -7,6 +7,7 @@ hero_height: is-small
 description: A system therapist, dataset wizard, Email troubleshooter, website ninja. probably a programmer. An apple device a day keeps doctoral degree away.
 image: /img/xigao_2031_sq.png
 show_sidebar: false
+gallery: my_gallery
 ---
 
 <style>
@@ -44,21 +45,7 @@ show_sidebar: false
   </div>
 </div>
 
-# Gallery
-```yaml
-- title: Life in a Nutshell
-  images:
-    - link: gallery/paint1.png
-      alt: Watercolor painting 1
-      description: |-
-        Actually my 2nd painting
-      ratio: is-16by9
-    - link: gallery/paint2.png
-      alt: On the wall of my home
-      description: Watercolor painting 2
-      ratio: is-4by3
 
-```
 
 <a href="https://xigaoli.com"><img src="img/quit_cr.jpg" alt="Quit PhD" width="80px"></a>
 
