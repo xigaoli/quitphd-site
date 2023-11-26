@@ -9,3 +9,8 @@
       alt: On the wall of my home
       description: And my 3rd painting
       ratio: is-4by3
+    - link: ../gallery/roosevelt-1.jpg
+      alt: Watercolor painting 1
+      description: |-
+        Actually my 2nd painting
+      ratio: is-3by4

@@ -32,6 +32,7 @@ gallery: my_gallery
 <div class="columns">
   <div class="column is-6">
     <div class="text-wrapper">
+      <h2>About Me</h2>
       <p>A system therapist, dataset wizard, Email troubleshooter, website ninja.</p>
       <br>
       <p>And just maybe, a programmer. </p>
