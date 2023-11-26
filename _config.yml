@@ -2,13 +2,13 @@
 
 
 lang: en
-title: Xigao's Website
-tagline: Xigao's Personal Website
+title: QuitPhD
+tagline: Quit Ph.D.
 email: lxgfrom2009@gmail.com
 description: >
-  Xigao Li's personal page
+  Find More
 baseurl: "/"
-url: "https://www.xigaoli.com"
+url: "https://www.quitphd.com"
 permalink: pretty
 #favicon: /path/to/favicon.png
 # gh_sponsor: chrisrhymes

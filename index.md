@@ -1,6 +1,6 @@
 ---
-title: Drake
-# subtitle: A system repairer, dataset wizard, Email troubleshooter, website ninja. probably a programmer. An apple a day keeps doctoral degree away.
+title: Quit Ph.D.
+subtitle: Get a Better Life.
 layout: page
 hero_height: is-small
 # callouts: home_callouts
