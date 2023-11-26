@@ -44,14 +44,22 @@ show_sidebar: false
   </div>
 </div>
 
-# News
-Last update: Sep 15, 2023
+# Gallery
+```yaml
+- title: Life in a Nutshell
+  images:
+    - link: gallery/paint1.png
+      alt: Watercolor painting 1
+      description: |-
+        Actually my 2nd painting
+      ratio: is-16by9
+    - link: gallery/paint2.png
+      alt: On the wall of my home
+      description: Watercolor painting 2
+      ratio: is-4by3
 
-# About Me
+```
 
-I am a Ph.D graduated in the Department of Computer Science at Stony Brook University.
-
-<p>Lastly, I have something else that is interesting.</p>
 <a href="https://xigaoli.com"><img src="img/quit_cr.jpg" alt="Quit PhD" width="80px"></a>
 
 [NA]: #
