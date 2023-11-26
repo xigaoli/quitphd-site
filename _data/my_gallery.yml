@@ -4,8 +4,8 @@
       alt: Watercolor painting 1
       description: |-
         Actually my 2nd painting
-      ratio: is-16by9
+      ratio: is-3by4
     - link: ../gallery/paint2.jpg
       alt: On the wall of my home
-      description: Watercolor painting 2
+      description: And my 3rd painting
       ratio: is-4by3
