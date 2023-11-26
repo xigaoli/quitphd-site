@@ -12,5 +12,13 @@
     - link: ../gallery/roosevelt-1.jpg
       alt: Watercolor painting 1
       description: |-
-        Actually my 2nd painting
+        A memorable time
       ratio: is-3by4
+
+
+- title: Personality
+  images:
+    - link: ../gallery/ppl1.jpg
+    - link: ../gallery/ppl2.jpg
+    - link: ../gallery/ppl3.jpg
+    - link: ../gallery/ppl4.jpg
