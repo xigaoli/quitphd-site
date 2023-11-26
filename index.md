@@ -7,6 +7,7 @@ hero_height: is-small
 description: A system therapist, dataset wizard, Email troubleshooter, website ninja. probably a programmer. An apple device a day keeps doctoral degree away.
 image: /img/xigao_2031_sq.png
 show_sidebar: false
+gallery: my_gallery
 ---
 
 <style>
