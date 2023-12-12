@@ -1,0 +1,28 @@
+- title: Hand-draw pixel art with MSPaint.exe
+  images:
+    - link: ../img/handdraw-desktop/IMG_7347.jpg
+      alt: My hand-draw desktop background
+      description: |-
+        My hand-draw desktop background 
+      ratio: is-16by9
+    - link: ../img/handdraw-desktop/IMG_7345.jpg
+      alt: My hand-draw desktop dialogue
+      description: |-
+        My hand-draw dialogue
+      ratio: is-16by9
+    - link: ../img/handdraw-desktop/IMG_7348.jpg
+      alt: My hand-draw dialogue
+      description: |-
+        My hand-draw dialogue
+    - link: ../img/handdraw-desktop/IMG_7349.jpg
+      alt: My hand-draw portrait
+      description: |-
+        My hand-draw portrait
+    - link: ../img/handdraw-desktop/IMG_7350.jpg
+      alt: My hand-draw portrait
+      description: |-
+        My hand-draw portrait
+    - link: ../img/handdraw-desktop/IMG_7351.jpg
+      alt: My hand-draw desktop background
+      description: |-
+        My hand-draw desktop background
