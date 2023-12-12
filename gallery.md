@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Image Gallery
-subtitle: An example image gallery page
-description: A simple image gallery page 
+subtitle: My Image Gallery
+description: My Image Gallery
+hero_height: is-small
 gallery: my_gallery
 show_sidebar: false
 ---
