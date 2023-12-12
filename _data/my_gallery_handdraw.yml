@@ -9,19 +9,20 @@
       alt: My hand-draw desktop dialogue
       description: |-
         My hand-draw dialogue
-      ratio: is-16by9
-    - link: ../img/handdraw-desktop/IMG_7348.png
-      alt: My hand-draw dialogue
-      description: |-
-        My hand-draw dialogue
-    - link: ../img/handdraw-desktop/IMG_7349.png
-      alt: My hand-draw portrait
-      description: |-
-        My hand-draw portrait
     - link: ../img/handdraw-desktop/IMG_7350.png
       alt: My hand-draw portrait
       description: |-
         My hand-draw portrait
+      ratio: is-16by9
+    - link: ../img/handdraw-desktop/IMG_7348.png
+      alt: My hand-draw portrait
+      description: |-
+        My hand-draw portrait
+    - link: ../img/handdraw-desktop/IMG_7349.png
+      alt: My hand-draw portrait
+      description: |-
+        My hand-draw portrait
+    
     - link: ../img/handdraw-desktop/IMG_7351.jpg
       alt: My hand-draw desktop background
       description: |-
