@@ -92,8 +92,6 @@
             height: 100%;
             pointer-events: none;
         }
-        .animated-line {
-        }
         @keyframes drawLine {
             from {
                 stroke-dashoffset: 5000;
@@ -111,6 +109,12 @@
         .row {
             display: flex;
             justify-content: center;
+            gap: 10px;
+        }
+        .row-label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             gap: 10px;
         }
     </style>
@@ -211,13 +215,15 @@
             let num1 = parseInt(document.getElementById("num1").value) || 0;
             let num2 = parseInt(document.getElementById("num2").value) || 0;
             
-            let resultBinary = (num1 + num2).toString(2);
+            let resultDecimal = num1 + num2;
+            let resultBinary = resultDecimal.toString(2);
             let maxLength = resultBinary.length;
             let bin1 = decimalToBinary(num1, maxLength);
             let bin2 = decimalToBinary(num2, maxLength);
             let { result, steps } = binaryAddition(bin1, bin2);
             
             document.getElementById("binaryDisplay").innerHTML = `Binary: ${bin1} + ${bin2}`;
+            document.getElementById("resultDisplay").innerHTML = `Result: ${result} (${resultDecimal})`;
             generateStepsFlow(steps);
         }
         
@@ -251,22 +257,47 @@
                 
                 let carryRow = document.createElement("div");
                 carryRow.classList.add("bit-row");
+
+                let carryRowLabel = document.createElement("div");
+                carryRowLabel.classList.add("row-label");
+                carryRowLabel.innerText = "Carry: "
+                carryRow.appendChild(carryRowLabel);
                 
                 let carryBit = document.createElement("div");
                 carryBit.classList.add("bit");
                 carryBit.innerText = step.carry;
                 carryRow.appendChild(carryBit);
                 
-                bitContainer.appendChild(bitRow);
-                bitContainer.appendChild(carryRow);
-                stepDiv.appendChild(bitContainer);
+                // bit result
+                let bitSumRow = document.createElement("div");
+                bitSumRow.classList.add("bit-row");
 
+                let bitSumLabel = document.createElement("div");
+                bitSumLabel.classList.add("row-label");
+                bitSumLabel.innerText = "Bit Sum:"
+                bitSumRow.appendChild(bitSumLabel);
+
+                let bitSum = document.createElement("div");
+                bitSum.classList.add("bit");
+                bitSum.innerText = step.sum;
+                bitSumRow.appendChild(bitSum);
+
+
+                
+                // anchors
                 let anchorLeft = document.createElement("div");
                 anchorLeft.classList.add("anchor-left");
-                stepDiv.appendChild(anchorLeft);
                 
                 let anchorRight = document.createElement("div");
                 anchorRight.classList.add("anchor-right");
+                
+                // append to containers
+
+                bitContainer.appendChild(bitRow);
+                bitContainer.appendChild(carryRow);
+                bitContainer.appendChild(bitSumRow);
+                stepDiv.appendChild(bitContainer);
+                stepDiv.appendChild(anchorLeft);
                 stepDiv.appendChild(anchorRight);
                 
                 logicRow.appendChild(stepDiv);
@@ -282,6 +313,8 @@
                     bit1.style.opacity = "1";
                     bit2.style.opacity = "1";
                     carryBit.style.opacity = "1";
+                    bitSum.style.opacity = "1";
+                    bitSum.style.backgroundColor = "salmon";
                     stepDiv.style.opacity = "1";
                     stepDiv.style.transform = "translateY(0)";
                 }, index * 700);
