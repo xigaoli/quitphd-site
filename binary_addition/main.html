@@ -223,11 +223,11 @@
             let { result, steps } = binaryAddition(bin1, bin2);
             
             document.getElementById("binaryDisplay").innerHTML = `Binary: ${bin1} + ${bin2}`;
-            document.getElementById("resultDisplay").innerHTML = `Result: ${result} (${resultDecimal})`;
-            generateStepsFlow(steps);
+            let resultDisplay = `Result: ${result} (${resultDecimal})`;
+            generateStepsFlow(steps, resultDisplay);
         }
         
-        function generateStepsFlow(steps) {
+        function generateStepsFlow(steps, resultDisplay) {
             let svgContainer = document.getElementById("line-container");
             initSVGContainer(svgContainer);
             let logicRow = document.getElementById("logicRow");
@@ -321,7 +321,7 @@
                 // wait until prev animation complete
                 if(drawItem.firstAnchor){
                       setTimeout(() => {
-                          console.log("step=" + index +", Prev carry="+drawItem.prevCarry);
+                          console.log("step=" + index + "/" + steps.length +", Prev carry="+drawItem.prevCarry);
                           let lineStyle="solid";
                           if(drawItem.prevCarry){
                             lineStyle="dashed";
@@ -329,7 +329,12 @@
                           drawLineBetweenAnchors(drawItem.firstAnchor, drawItem.secondAnchor, svgContainer, lineStyle);
                       }, (index + 1) *700);
                     }
+                
             });
+            // at the end of loop, display result
+            setTimeout(() => {
+                    document.getElementById("resultDisplay").innerHTML = resultDisplay;
+                }, steps.length * 700);
         }
     </script>
 </body>
